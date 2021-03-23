@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12C4299B2609E78F0093E64F /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C4299A2609E78F0093E64F /* DetailView.swift */; };
 		12C7D7A02609E4F7006FB86C /* Dictator WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 12C7D79F2609E4F7006FB86C /* Dictator WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		12C7D7A62609E4F7006FB86C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12C7D7A42609E4F7006FB86C /* Interface.storyboard */; };
 		12C7D7A82609E4F9006FB86C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12C7D7A72609E4F9006FB86C /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 		12C7D7BA2609E4F9006FB86C /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C7D7B92609E4F9006FB86C /* ComplicationController.swift */; };
 		12C7D7BC2609E4FA006FB86C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12C7D7BB2609E4FA006FB86C /* Assets.xcassets */; };
 		12C7D7BF2609E4FA006FB86C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12C7D7BE2609E4FA006FB86C /* Preview Assets.xcassets */; };
+		12C7D7D22609E53D006FB86C /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C7D7D12609E53D006FB86C /* Note.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		12C4299A2609E78F0093E64F /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		12C7D79B2609E4F7006FB86C /* Dictator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dictator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12C7D79F2609E4F7006FB86C /* Dictator WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dictator WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		12C7D7A52609E4F7006FB86C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -75,6 +78,7 @@
 		12C7D7BB2609E4FA006FB86C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12C7D7BE2609E4FA006FB86C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		12C7D7C02609E4FA006FB86C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12C7D7D12609E53D006FB86C /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,11 +126,13 @@
 			children = (
 				12C7D7B32609E4F9006FB86C /* HostingController.swift */,
 				12C7D7B52609E4F9006FB86C /* ContentView.swift */,
+				12C4299A2609E78F0093E64F /* DetailView.swift */,
 				12C7D7B72609E4F9006FB86C /* ExtensionDelegate.swift */,
 				12C7D7B92609E4F9006FB86C /* ComplicationController.swift */,
 				12C7D7BB2609E4FA006FB86C /* Assets.xcassets */,
 				12C7D7C02609E4FA006FB86C /* Info.plist */,
 				12C7D7BD2609E4FA006FB86C /* Preview Content */,
+				12C7D7D12609E53D006FB86C /* Note.swift */,
 			);
 			path = "Dictator WatchKit Extension";
 			sourceTree = "<group>";
@@ -266,6 +272,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12C7D7D22609E53D006FB86C /* Note.swift in Sources */,
+				12C4299B2609E78F0093E64F /* DetailView.swift in Sources */,
 				12C7D7B62609E4F9006FB86C /* ContentView.swift in Sources */,
 				12C7D7BA2609E4F9006FB86C /* ComplicationController.swift in Sources */,
 				12C7D7B42609E4F9006FB86C /* HostingController.swift in Sources */,
