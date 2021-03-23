@@ -1,0 +1,573 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12C7D7A02609E4F7006FB86C /* Dictator WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 12C7D79F2609E4F7006FB86C /* Dictator WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		12C7D7A62609E4F7006FB86C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12C7D7A42609E4F7006FB86C /* Interface.storyboard */; };
+		12C7D7A82609E4F9006FB86C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12C7D7A72609E4F9006FB86C /* Assets.xcassets */; };
+		12C7D7AF2609E4F9006FB86C /* Dictator WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 12C7D7AE2609E4F9006FB86C /* Dictator WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		12C7D7B42609E4F9006FB86C /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C7D7B32609E4F9006FB86C /* HostingController.swift */; };
+		12C7D7B62609E4F9006FB86C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C7D7B52609E4F9006FB86C /* ContentView.swift */; };
+		12C7D7B82609E4F9006FB86C /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C7D7B72609E4F9006FB86C /* ExtensionDelegate.swift */; };
+		12C7D7BA2609E4F9006FB86C /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C7D7B92609E4F9006FB86C /* ComplicationController.swift */; };
+		12C7D7BC2609E4FA006FB86C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12C7D7BB2609E4FA006FB86C /* Assets.xcassets */; };
+		12C7D7BF2609E4FA006FB86C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12C7D7BE2609E4FA006FB86C /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		12C7D7A12609E4F7006FB86C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12C7D7952609E4F7006FB86C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12C7D79E2609E4F7006FB86C;
+			remoteInfo = "Dictator WatchKit App";
+		};
+		12C7D7B02609E4F9006FB86C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12C7D7952609E4F7006FB86C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12C7D7AD2609E4F9006FB86C;
+			remoteInfo = "Dictator WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		12C7D7C62609E4FA006FB86C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				12C7D7AF2609E4F9006FB86C /* Dictator WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12C7D7CA2609E4FA006FB86C /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				12C7D7A02609E4F7006FB86C /* Dictator WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		12C7D79B2609E4F7006FB86C /* Dictator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dictator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		12C7D79F2609E4F7006FB86C /* Dictator WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dictator WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		12C7D7A52609E4F7006FB86C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		12C7D7A72609E4F9006FB86C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		12C7D7A92609E4F9006FB86C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12C7D7AE2609E4F9006FB86C /* Dictator WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Dictator WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		12C7D7B32609E4F9006FB86C /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		12C7D7B52609E4F9006FB86C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		12C7D7B72609E4F9006FB86C /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		12C7D7B92609E4F9006FB86C /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		12C7D7BB2609E4FA006FB86C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		12C7D7BE2609E4FA006FB86C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		12C7D7C02609E4FA006FB86C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		12C7D7AB2609E4F9006FB86C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12C7D7942609E4F7006FB86C = {
+			isa = PBXGroup;
+			children = (
+				12C7D7A32609E4F7006FB86C /* Dictator WatchKit App */,
+				12C7D7B22609E4F9006FB86C /* Dictator WatchKit Extension */,
+				12C7D79C2609E4F7006FB86C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		12C7D79C2609E4F7006FB86C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				12C7D79B2609E4F7006FB86C /* Dictator.app */,
+				12C7D79F2609E4F7006FB86C /* Dictator WatchKit App.app */,
+				12C7D7AE2609E4F9006FB86C /* Dictator WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		12C7D7A32609E4F7006FB86C /* Dictator WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				12C7D7A42609E4F7006FB86C /* Interface.storyboard */,
+				12C7D7A72609E4F9006FB86C /* Assets.xcassets */,
+				12C7D7A92609E4F9006FB86C /* Info.plist */,
+			);
+			path = "Dictator WatchKit App";
+			sourceTree = "<group>";
+		};
+		12C7D7B22609E4F9006FB86C /* Dictator WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				12C7D7B32609E4F9006FB86C /* HostingController.swift */,
+				12C7D7B52609E4F9006FB86C /* ContentView.swift */,
+				12C7D7B72609E4F9006FB86C /* ExtensionDelegate.swift */,
+				12C7D7B92609E4F9006FB86C /* ComplicationController.swift */,
+				12C7D7BB2609E4FA006FB86C /* Assets.xcassets */,
+				12C7D7C02609E4FA006FB86C /* Info.plist */,
+				12C7D7BD2609E4FA006FB86C /* Preview Content */,
+			);
+			path = "Dictator WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		12C7D7BD2609E4FA006FB86C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				12C7D7BE2609E4FA006FB86C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		12C7D79A2609E4F7006FB86C /* Dictator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12C7D7CB2609E4FA006FB86C /* Build configuration list for PBXNativeTarget "Dictator" */;
+			buildPhases = (
+				12C7D7992609E4F7006FB86C /* Resources */,
+				12C7D7CA2609E4FA006FB86C /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				12C7D7A22609E4F7006FB86C /* PBXTargetDependency */,
+			);
+			name = Dictator;
+			productName = Dictator;
+			productReference = 12C7D79B2609E4F7006FB86C /* Dictator.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		12C7D79E2609E4F7006FB86C /* Dictator WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12C7D7C72609E4FA006FB86C /* Build configuration list for PBXNativeTarget "Dictator WatchKit App" */;
+			buildPhases = (
+				12C7D79D2609E4F7006FB86C /* Resources */,
+				12C7D7C62609E4FA006FB86C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				12C7D7B12609E4F9006FB86C /* PBXTargetDependency */,
+			);
+			name = "Dictator WatchKit App";
+			productName = "Dictator WatchKit App";
+			productReference = 12C7D79F2609E4F7006FB86C /* Dictator WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		12C7D7AD2609E4F9006FB86C /* Dictator WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12C7D7C32609E4FA006FB86C /* Build configuration list for PBXNativeTarget "Dictator WatchKit Extension" */;
+			buildPhases = (
+				12C7D7AA2609E4F9006FB86C /* Sources */,
+				12C7D7AB2609E4F9006FB86C /* Frameworks */,
+				12C7D7AC2609E4F9006FB86C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Dictator WatchKit Extension";
+			productName = "Dictator WatchKit Extension";
+			productReference = 12C7D7AE2609E4F9006FB86C /* Dictator WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		12C7D7952609E4F7006FB86C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					12C7D79A2609E4F7006FB86C = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					12C7D79E2609E4F7006FB86C = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					12C7D7AD2609E4F9006FB86C = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 12C7D7982609E4F7006FB86C /* Build configuration list for PBXProject "Dictator" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 12C7D7942609E4F7006FB86C;
+			productRefGroup = 12C7D79C2609E4F7006FB86C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				12C7D79A2609E4F7006FB86C /* Dictator */,
+				12C7D79E2609E4F7006FB86C /* Dictator WatchKit App */,
+				12C7D7AD2609E4F9006FB86C /* Dictator WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		12C7D7992609E4F7006FB86C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12C7D79D2609E4F7006FB86C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12C7D7A82609E4F9006FB86C /* Assets.xcassets in Resources */,
+				12C7D7A62609E4F7006FB86C /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12C7D7AC2609E4F9006FB86C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12C7D7BF2609E4FA006FB86C /* Preview Assets.xcassets in Resources */,
+				12C7D7BC2609E4FA006FB86C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		12C7D7AA2609E4F9006FB86C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12C7D7B62609E4F9006FB86C /* ContentView.swift in Sources */,
+				12C7D7BA2609E4F9006FB86C /* ComplicationController.swift in Sources */,
+				12C7D7B42609E4F9006FB86C /* HostingController.swift in Sources */,
+				12C7D7B82609E4F9006FB86C /* ExtensionDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		12C7D7A22609E4F7006FB86C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12C7D79E2609E4F7006FB86C /* Dictator WatchKit App */;
+			targetProxy = 12C7D7A12609E4F7006FB86C /* PBXContainerItemProxy */;
+		};
+		12C7D7B12609E4F9006FB86C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12C7D7AD2609E4F9006FB86C /* Dictator WatchKit Extension */;
+			targetProxy = 12C7D7B02609E4F9006FB86C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		12C7D7A42609E4F7006FB86C /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12C7D7A52609E4F7006FB86C /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		12C7D7C12609E4FA006FB86C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		12C7D7C22609E4FA006FB86C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		12C7D7C42609E4FA006FB86C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Dictator WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = X6M775UK8W;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Dictator WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.dsmith.Dictator.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		12C7D7C52609E4FA006FB86C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Dictator WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = X6M775UK8W;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Dictator WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.dsmith.Dictator.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		12C7D7C82609E4FA006FB86C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X6M775UK8W;
+				IBSC_MODULE = Dictator_WatchKit_Extension;
+				INFOPLIST_FILE = "Dictator WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = app.dsmith.Dictator.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		12C7D7C92609E4FA006FB86C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X6M775UK8W;
+				IBSC_MODULE = Dictator_WatchKit_Extension;
+				INFOPLIST_FILE = "Dictator WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = app.dsmith.Dictator.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		12C7D7CC2609E4FA006FB86C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X6M775UK8W;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.dsmith.Dictator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		12C7D7CD2609E4FA006FB86C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X6M775UK8W;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.dsmith.Dictator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		12C7D7982609E4F7006FB86C /* Build configuration list for PBXProject "Dictator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12C7D7C12609E4FA006FB86C /* Debug */,
+				12C7D7C22609E4FA006FB86C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12C7D7C32609E4FA006FB86C /* Build configuration list for PBXNativeTarget "Dictator WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12C7D7C42609E4FA006FB86C /* Debug */,
+				12C7D7C52609E4FA006FB86C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12C7D7C72609E4FA006FB86C /* Build configuration list for PBXNativeTarget "Dictator WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12C7D7C82609E4FA006FB86C /* Debug */,
+				12C7D7C92609E4FA006FB86C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12C7D7CB2609E4FA006FB86C /* Build configuration list for PBXNativeTarget "Dictator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12C7D7CC2609E4FA006FB86C /* Debug */,
+				12C7D7CD2609E4FA006FB86C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 12C7D7952609E4F7006FB86C /* Project object */;
+}
